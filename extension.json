@@ -1,0 +1,59 @@
+{
+  "identifier": "au.id.benbeshara.cplusplus",
+  "name": "C++ (ClangD Language Server)",
+  "organization": "Ben Beshara",
+  "description": "Incredibly bare-bones clangd integration",
+  "version": "0.1",
+  "categories": ["languages"],
+  "license": "MIT",
+  "repository": "https://github.com/benbeshara/nova-cplusplus",
+  "bugs": "https://github.com/benbeshara/nova-cplusplus/issues",
+
+  "main": "main.js",
+
+  "entitlements": {
+    "process": true,
+    "filesystem": "readonly"
+  },
+
+  "config": [
+    {
+      "key": "bb.clangd-path",
+      "title": "clangd Path",
+      "type": "path",
+      "placeholder": "/usr/local/bin/clangd"
+    },
+    {
+      "key": "bb.clangd-cc-path",
+      "title": "Path to compile-commands.json directory",
+      "type": "path",
+      "allowFolders": true,
+      "allowFiles": false,
+      "placeholder": "Project Folder"
+    }
+  ],
+
+  "configWorkspace": [
+    {
+      "key": "bb.clangd-cc-path",
+      "title": "Path to compile-commands.json directory",
+      "type": "path",
+      "allowFolders": true,
+      "allowFiles": false,
+      "placeholder": "Global Default"
+    }
+  ],
+
+  "activationEvents": [
+    "onLanguage:c",
+    "onLanguage:cc",
+    "onLanguage:cpp",
+    "onLanguage:cxx",
+    "onLanguage:c++",
+    "onLanguage:h",
+    "onLanguage:hh",
+    "onLanguage:hpp",
+    "onLanguage:hxx",
+    "onLanguage:h++"
+  ]
+}
