@@ -4,6 +4,12 @@
 
 ---
 
+# This project is no longer maintained
+I haven't had the time to work on this in a long while - StaySail Systems has massively improved this work with [CDragon](https://github.com/staysail/nova-cdragon) and I'd highly recommend you use their extension instead
+
+---
+# Original README.md
+
 This extension provides **_very_** bare-bones integration with `clangd` to Nova - it's basically the example wrapper with a few tweaks.
 
 ## Requirements
